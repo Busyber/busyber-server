@@ -1,7 +1,9 @@
-const betaUserResolvers = require("./betaUserResolvers.js");
+const addBetaResponseResolvers = require("./addBetaResponseResolvers.js");
+const placeholderResolvers = require("./placeholderResolvers.js");
 
 
 module.exports = [
-    betaUserResolvers,
+    addBetaResponseResolvers,
+placeholderResolvers,
 
 ];
