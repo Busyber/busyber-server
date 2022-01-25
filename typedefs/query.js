@@ -2,7 +2,11 @@ const { gql } = require("apollo-server-express");
 
 module.exports = gql`
   type Query {
-    placeholder(placeholder : placeholderInput) :placeholder
+    user: User
+    isPasswordResetValid(token: String): Boolean
+    isLoggedIn: Boolean
+    betaUsers :[betaUser]
+overview :stats
 
   }
 `;

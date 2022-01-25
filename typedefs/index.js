@@ -1,8 +1,9 @@
 const query = require("./query");
 const mutation = require("./mutation");
+const { userTypeDef } = require("../libs/auth");
 const betaUser = require("./types/betaUser.js");
 const addBetaResponse = require("./types/addBetaResponse.js");
-const placeholder = require("./types/placeholder.js");
+const stats = require("./types/stats.js");
 
 
 
@@ -10,8 +11,9 @@ const placeholder = require("./types/placeholder.js");
 module.exports = [
    query,
    mutation,
+   userTypeDef,
    betaUser,
 addBetaResponse,
-placeholder,
+stats,
 
 ];

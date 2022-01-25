@@ -8,7 +8,7 @@ success : Boolean,
 }
 
 input addBetaResponseInput {
- _id : ID, 
+ _id : String, 
 exists : Boolean, 
 success : Boolean, 
 }

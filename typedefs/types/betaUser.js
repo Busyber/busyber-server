@@ -10,7 +10,7 @@ type : String,
 }
 
 input betaUserInput {
- _id : ID, 
+ _id : String, 
 name : String, 
 email : String, 
 phone : String, 

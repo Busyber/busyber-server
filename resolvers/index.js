@@ -1,9 +1,14 @@
+const { userResolvers } = require('../libs/auth');
+
 const addBetaResponseResolvers = require("./addBetaResponseResolvers.js");
-const placeholderResolvers = require("./placeholderResolvers.js");
+const betaUserResolvers = require("./betaUserResolvers.js");
+const statsResolvers = require("./statsResolvers.js");
 
 
 module.exports = [
+    userResolvers,
     addBetaResponseResolvers,
-placeholderResolvers,
+betaUserResolvers,
+statsResolvers,
 
 ];

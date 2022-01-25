@@ -5,6 +5,7 @@ const db = require('./db')
 const dotenv = require('dotenv');
 const express = require('express')
 var cors = require('cors')
+const { context } = require('./libs/auth');
 
 
 
@@ -30,6 +31,7 @@ const server = new ApolloServer({
      //DATA_SOURCES
     }
   },
+  context,
   playground: process.env.SERVER_PLAYGROUND,
 });
 
