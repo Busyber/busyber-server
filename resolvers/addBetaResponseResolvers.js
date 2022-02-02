@@ -1,4 +1,5 @@
 const betaUserModel = require("../models/betaUserModel.js");
+const { dateCreated } = require("../libs/utils/dateUtil");
 
 
 module.exports = {

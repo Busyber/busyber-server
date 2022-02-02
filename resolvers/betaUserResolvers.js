@@ -1,4 +1,5 @@
 const betaUserModel = require("../models/betaUserModel.js");
+const { dateCreated } = require("../libs/utils/dateUtil");
 
 
 module.exports = {
@@ -16,6 +17,7 @@ name : item.name,
 email : item.email, 
 phone : item.phone, 
 type : item.type, 
+date : dateCreated(item), 
 
 }
  returnContent.push(content) 

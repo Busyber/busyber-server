@@ -7,6 +7,7 @@ name : String,
 email : String, 
 phone : String, 
 type : String, 
+date : String, 
 }
 
 input betaUserInput {
@@ -15,6 +16,7 @@ name : String,
 email : String, 
 phone : String, 
 type : String, 
+date : String, 
 }
 
 
